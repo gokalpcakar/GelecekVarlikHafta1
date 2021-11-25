@@ -53,3 +53,5 @@ C:\Users\Cemil\source\repos\PrometheusProject\PrometheusApp\PrometheusAppWebApi\
 C:\Users\Cemil\source\repos\PrometheusProject\PrometheusApp\PrometheusAppWebApi\obj\Debug\net5.0\ref\PrometheusAppWebApi.dll
 C:\Users\Cemil\source\repos\PrometheusProject\PrometheusApp\PrometheusAppWebApi\obj\Debug\net5.0\PrometheusAppWebApi.pdb
 C:\Users\Cemil\source\repos\PrometheusProject\PrometheusApp\PrometheusAppWebApi\obj\Debug\net5.0\PrometheusAppWebApi.genruntimeconfig.cache
+C:\Users\Cemil\source\repos\PrometheusProject\PrometheusApp\PrometheusAppWebApi\bin\Debug\net5.0\Model.dll
+C:\Users\Cemil\source\repos\PrometheusProject\PrometheusApp\PrometheusAppWebApi\bin\Debug\net5.0\Model.pdb
