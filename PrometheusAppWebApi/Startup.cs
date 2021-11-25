@@ -30,6 +30,7 @@ namespace PrometheusAppWebApi
         public void ConfigureServices(IServiceCollection services)
         {
             // localhosttaki veritabaný baðlantýsý ekleniyor.
+            // appsettings.json'daki baðlantý adresi == DBConnection
             services.AddDbContext<UserDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DBConnection")));
 

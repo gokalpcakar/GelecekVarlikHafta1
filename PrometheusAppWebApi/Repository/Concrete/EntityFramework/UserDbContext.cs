@@ -17,6 +17,7 @@ namespace PrometheusAppWebApi.Repository.Concrete.EntityFramework
         public DbSet<User> Users { get; set; }
 
         // Modele başlangıç değerlerini bu metod ile veriyoruz.
+        // Bu metod sayesinde migration verileri localhost'a ekleyebiliyor.
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
