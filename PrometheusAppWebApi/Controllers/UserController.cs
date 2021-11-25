@@ -13,6 +13,7 @@ namespace PrometheusAppWebApi.Controllers
     public class UserController : Controller
     {
         // CRUD işlemlerini gerçekleştirecek metodların tanımlandığı interface çağırılıyor.
+        // Namespace'i PrometheusAppWebApi.Repository.Abstract
         private readonly IUserRepository userRepository;
 
         public UserController(IUserRepository _userRepository)
@@ -89,7 +90,7 @@ namespace PrometheusAppWebApi.Controllers
         }
 
         // Kullanıcı güncellemenin gerçekleştirileceği action metodu
-        [HttpPut("{id}")]
+        [HttpPut("{id:int}")]
         public async Task<ActionResult<User>> UpdateUser(int id, User user)
         {
             try
@@ -116,7 +117,7 @@ namespace PrometheusAppWebApi.Controllers
         }
 
         // Kullanıcı silmenin gerçekleştirileceği action metodu
-        [HttpDelete("{id}")]
+        [HttpDelete("{id:int}")]
         public async Task<ActionResult> DeleteUser(int id)
         {
             try
