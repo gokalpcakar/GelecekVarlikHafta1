@@ -5,6 +5,8 @@ namespace PrometheusAppWebApi.Migrations
 {
     public partial class InitialCreate : Migration
     {
+        // proje çalıştığında users tablosu oluşturuluyor
+        // otomatik olarak localhosta aşağıdaki veriler işleniyor
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
@@ -36,6 +38,7 @@ namespace PrometheusAppWebApi.Migrations
                 });
         }
 
+        // migration'ın silinmesi durumunda tabloya drop işlemi gerçekleştiriliyor.
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
