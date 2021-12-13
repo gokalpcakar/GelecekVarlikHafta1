@@ -62,7 +62,7 @@ namespace PrometheusAppWebApi.Controllers
 
         // Kullanıcı eklemenin gerçekleştirileceği action metodu
         [HttpPost]
-        public async Task<ActionResult<User>> AddUser(User user)
+        public async Task<ActionResult<User>> AddUser([FromBody] User user)
         {
             try
             {
@@ -91,7 +91,7 @@ namespace PrometheusAppWebApi.Controllers
 
         // Kullanıcı güncellemenin gerçekleştirileceği action metodu
         [HttpPut("{id:int}")]
-        public async Task<ActionResult<User>> UpdateUser(int id, User user)
+        public async Task<ActionResult<User>> UpdateUser(int id, [FromBody] User user)
         {
             try
             {
